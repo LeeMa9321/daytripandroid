@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/singleGoalContainer"
+              android:layout_width="fill_parent"
+              android:layout_height="175dp"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:id="@+id/goal_box_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal Name here"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/goal_box_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:text="Insert Summary Here"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Delete"
+        android:textSize="12sp"/>
+
+</LinearLayout>

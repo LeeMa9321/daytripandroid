@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#ffffff"
+             tools:context="leema.com.daytrip1.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/header"/>
+
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rectangle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Welcome Back"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/what_would"
+        android:layout_width="296dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/rectangle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="54dp"
+        android:gravity="center_horizontal"
+        android:text="@string/what_would"
+        android:textSize="24sp"/>
+
+    <ImageButton
+        android:id="@+id/goalbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/set_a_goal"
+        android:layout_marginStart="27dp"
+        android:layout_below="@+id/what_would"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button"
+                android:textColor="@android:color/transparent"
+                android:textColorLink="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ideabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/idea"
+        android:layout_marginEnd="26dp"
+        android:layout_alignTop="@+id/goalbutton"
+        android:layout_alignEnd="@+id/rectangle"/>
+
+    <ImageButton
+        android:id="@+id/workoutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/track_workout"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/goalbutton"
+        android:layout_alignStart="@+id/goalbutton"/>
+
+    <ImageButton
+        android:id="@+id/bmibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/bmi_button"
+        android:layout_alignTop="@+id/workoutbutton"
+        android:layout_alignStart="@+id/ideabutton"/>
+
+    <ImageButton
+        android:id="@+id/mealbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/track_meal"
+        android:layout_below="@+id/workoutbutton"
+        android:layout_alignStart="@+id/workoutbutton"
+        android:layout_marginTop="18dp"/>
+
+    <ImageButton
+        android:id="@+id/runbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bmibutton"
+        android:layout_alignTop="@+id/mealbutton"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/runbutton"/>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</RelativeLayout>

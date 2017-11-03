@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1007858434738",
+    "firebase_url": "https://fitnessapp-b290c.firebaseio.com",
+    "project_id": "fitnessapp-b290c",
+    "storage_bucket": "fitnessapp-b290c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007858434738:android:0bdb8db3cf820785",
+        "android_client_info": {
+          "package_name": "leema.com.daytrip1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007858434738-bp6pksln99pluk42rn6rvdibubohqq0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS--6UWj1agjhQ42CrGDjO_tKvWc-vfm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
