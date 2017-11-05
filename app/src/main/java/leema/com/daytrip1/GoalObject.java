@@ -5,12 +5,14 @@ package leema.com.daytrip1;
  */
 
 public class GoalObject {
+    private String key;
     private String goalName;
     private String goalDescription;
 
-    public GoalObject(String goalName, String goalDescription) {
+    public GoalObject(String key, String goalName, String goalDescription) {
         this.goalName = goalName;
         this.goalDescription = goalDescription;
+        this.key = key;
     }
     public GoalObject() {
 
@@ -24,4 +26,7 @@ public class GoalObject {
         return goalDescription;
     }
 
+    public String getKey() {
+        return key;
+    }
 }

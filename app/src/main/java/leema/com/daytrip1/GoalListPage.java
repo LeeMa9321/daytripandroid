@@ -11,10 +11,15 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -95,6 +100,7 @@ public class GoalListPage extends AppCompatActivity {
     private GoalListAdapter mAdapter;
     private DatabaseReference mDatabaseReference;
     private FirebaseUser user;
+    private List<GoalObject> goalList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,10 +112,11 @@ public class GoalListPage extends AppCompatActivity {
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference("goal");
 
-        goalListView = (ListView) findViewById(R.id.goal_list_view);
+        goalListView = findViewById(R.id.goal_list_view);
+
+        goalList = new ArrayList<>();
 
         ImageButton addGoal = (ImageButton) findViewById(R.id.add_new_goal_button);
 
@@ -120,8 +127,6 @@ public class GoalListPage extends AppCompatActivity {
                 startActivity(addNewGoal);
             }
         });
-
-
 
         // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
@@ -137,20 +142,37 @@ public class GoalListPage extends AppCompatActivity {
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
-
+    @Override
     public void onStart() {
         super.onStart();
-        mAdapter = new GoalListAdapter(GoalListPage.this, mDatabaseReference);
-        goalListView.setAdapter(mAdapter);
+
+        mDatabaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                goalList.clear();
+                for(DataSnapshot goalSnapshot : dataSnapshot.getChildren()) {
+                    GoalObject goal = goalSnapshot.getValue(GoalObject.class);
+
+                    goalList.add(goal);
+                }
+
+                GoalListAdapter goalListAdapter = new GoalListAdapter(GoalListPage.this, goalList);
+                goalListView.setAdapter(goalListAdapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
     }
 
     @Override
     public void onStop() {
         super.onStop();
 
-        mAdapter.cleanUp();
     }
-
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -161,6 +183,7 @@ public class GoalListPage extends AppCompatActivity {
         // are available.
         delayedHide(100);
     }
+
 
     private void toggle() {
         if (mVisible) {

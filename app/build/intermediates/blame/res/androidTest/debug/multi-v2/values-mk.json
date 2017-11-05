@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/leema/AndroidStudioProjects/DayTrip1/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/d967147b628b4ec253348a4b3b256a66/res/values-mk/values.xml",

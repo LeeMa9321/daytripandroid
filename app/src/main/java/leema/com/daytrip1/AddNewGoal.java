@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -137,17 +139,28 @@ public class AddNewGoal extends AppCompatActivity {
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
-    private void setGoalDesc() {
+    public void setGoalDesc() {
         Log.d("DayTrip", "Goal Name sent!");
 
-        String goalNameInput = goalName.getText().toString();
-        String goalSummaryInput = goalSummary.getText().toString();
-        if(!goalNameInput.equals("") || !goalSummaryInput.equals("")) {
-            GoalObject goal = new GoalObject(goalNameInput, goalSummaryInput);
-            mDatabaseReference.child(user.getUid()).child("goal").push().setValue(goal);
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference("goal");
+
+        final String goalNameInput = goalName.getText().toString();
+        final String goalSummaryInput = goalSummary.getText().toString();
+
+        if(!TextUtils.isEmpty(goalNameInput) && !TextUtils.isEmpty(goalSummaryInput)) {
+            String key = mDatabaseReference.push().getKey();
+            GoalObject goal = new GoalObject(key, goalNameInput, goalSummaryInput);
+
+            mDatabaseReference.child(key).setValue(goal);
             goalName.setText("");
             goalSummary.setText("");
+            Toast.makeText(AddNewGoal.this, "Goal Added!", Toast.LENGTH_LONG).show();
         }
+        else {
+            Toast.makeText(AddNewGoal.this, "Please enter goal information", Toast.LENGTH_LONG).show();
+        }
+
+
     }
 
     @Override

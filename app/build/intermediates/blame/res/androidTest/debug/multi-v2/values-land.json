@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/leema/AndroidStudioProjects/DayTrip1/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/res/values-land/values-land.xml",

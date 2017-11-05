@@ -129,6 +129,7 @@
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Enter Summary Here"
+        android:maxLength = "1000"
         android:inputType="textMultiLine"
         android:textAlignment="center"
         android:textColorLink="@android:color/transparent"

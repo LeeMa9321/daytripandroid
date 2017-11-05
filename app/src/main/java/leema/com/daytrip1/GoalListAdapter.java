@@ -1,122 +1,65 @@
 package leema.com.daytrip1;
 
 import android.app.Activity;
-import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by leema on 2017-10-22.
  */
 
-public class GoalListAdapter extends BaseAdapter {
+public class GoalListAdapter extends ArrayAdapter<GoalObject> {
 
     private Activity mActivity;
-    private DatabaseReference mDatabaseReference;
-    private ArrayList<DataSnapshot> mSnapshotList;
-    private FirebaseUser user;
-    private Button delete;
+    private List<GoalObject> goalList;
 
-    private ChildEventListener mListener = new ChildEventListener() {
-        @Override
-        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-            mSnapshotList.add(dataSnapshot);
-            notifyDataSetChanged();
-        }
-
-        @Override
-        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-        }
-
-        @Override
-        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-        }
-
-        @Override
-        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-
-        }
-    };
-
-    public GoalListAdapter(Activity activity, DatabaseReference ref) {
-        mActivity = activity;
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        mDatabaseReference = ref.child(user.getUid()).child("goal");
-        mDatabaseReference.addChildEventListener(mListener);
-        mSnapshotList = new ArrayList<>();
+    public GoalListAdapter(Activity mActivity, List<GoalObject> goalList) {
+        super(mActivity, R.layout.list_view_goal, goalList);
+        this.mActivity = mActivity;
+        this.goalList = goalList;
     }
 
-    static class ViewHolder {
-        TextView goalName;
-        TextView goalSummary;
-        RelativeLayout.LayoutParams params;
-    }
-
+    @NonNull
     @Override
-    public int getCount() {
-        return mSnapshotList.size();
+    public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater inflater = mActivity.getLayoutInflater();
+
+        View listViewItem = inflater.inflate(R.layout.list_view_goal, null, true);
+
+        TextView goalName = listViewItem.findViewById(R.id.goal_box_name);
+        TextView goalSummary = listViewItem.findViewById(R.id.goal_box_summary);
+        Button deleteButton = listViewItem.findViewById(R.id.delete_button);
+
+        final GoalObject goal = goalList.get(position);
+
+        goalName.setText(goal.getGoalName());
+        goalSummary.setText(goal.getGoalDescription());
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteGoal(goal.getKey());
+            }
+        });
+
+
+
+        return listViewItem;
     }
 
-    @Override
-    public GoalObject getItem(int position) {
+    private void deleteGoal(String key) {
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("goal").child(key);
+        ref.removeValue();
 
-        DataSnapshot snapshot = mSnapshotList.get(position);
-
-        return snapshot.getValue(GoalObject.class);
     }
 
-    @Override
-    public long getItemId(int position) {
-        return 0;
-    }
-
-    @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
-
-        if(convertView == null) {
-            LayoutInflater inflater = (LayoutInflater) mActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_view_goal, parent, false);
-            final ViewHolder holder = new ViewHolder();
-            holder.goalName = (TextView) convertView.findViewById(R.id.goal_box_name);
-            holder.goalSummary = (TextView) convertView.findViewById(R.id.goal_box_summary);
-            convertView.setTag(holder);
-        }
-
-        final GoalObject goal = getItem(position);
-        final ViewHolder holder = (ViewHolder) convertView.getTag();
-
-        String goalName = goal.getGoalName();
-        holder.goalName.setText(goalName);
-
-        String goalSmry = goal.getGoalDescription();
-        holder.goalSummary.setText(goalSmry);
-
-        return convertView;
-    }
-
-
-    public void cleanUp() {
-        mDatabaseReference.removeEventListener(mListener);
-    }
 }
