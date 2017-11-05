@@ -1,6 +1,7 @@
 package leema.com.daytrip1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
@@ -110,7 +111,7 @@ public class AddNewGoal extends AppCompatActivity {
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        goalName = (EditText) findViewById(R.id.goal_name_box);
+        goalName = (EditText) findViewById(R.id.workout_name_edit);
         goalSummary = (EditText) findViewById(R.id.summary_body);
         saveButton = (ImageButton) findViewById(R.id.save_button);
 
@@ -121,6 +122,15 @@ public class AddNewGoal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setGoalDesc();
+            }
+        });
+
+        ImageButton goback = findViewById(R.id.back_add_goal);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnPage = new Intent(AddNewGoal.this, GoalListPage.class);
+                startActivity(returnPage);
             }
         });
 

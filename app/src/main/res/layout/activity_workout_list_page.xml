@@ -10,16 +10,14 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
 
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"/>
+    <ImageButton
+        android:id="@+id/add_new_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/addexercise"/>
 
     <View
         android:id="@+id/rectangle"
@@ -37,11 +35,11 @@
         android:layout_alignBottom="@+id/rectangle"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:text="Your Goals"
+        android:text="Your Workouts"
         android:textSize="30sp"/>
 
     <ListView
-        android:id="@+id/goal_list_view"
+        android:id="@+id/workout_list_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_above="@+id/add_new_workout"
@@ -62,16 +60,7 @@
     </FrameLayout>
 
     <ImageButton
-        android:id="@+id/add_new_workout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/addnew"
-        android:layout_above="@+id/frameLayout"
-        android:layout_alignParentStart="true"/>
-
-    <ImageButton
-        android:id="@+id/back_goal_list"
+        android:id="@+id/back_workoutlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/workout_header"

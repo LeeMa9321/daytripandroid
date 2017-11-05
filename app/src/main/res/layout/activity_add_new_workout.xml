@@ -9,14 +9,6 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:textSize="50sp"
-        android:textStyle="bold"/>
 
     <View
         android:id="@+id/rectangle"
@@ -34,7 +26,7 @@
         android:layout_alignBottom="@+id/rectangle"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:text="New Goal"
+        android:text="New Workout"
         android:textSize="30sp"/>
 
     <FrameLayout
@@ -73,12 +65,12 @@
         android:id="@+id/new_workout_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Goal Name:"
-        android:textColorLink="@android:color/transparent"
-        android:textSize="24sp"
+        android:layout_alignStart="@+id/rectangle_one"
         android:layout_below="@+id/rectangle"
-        android:layout_alignStart="@+id/rectangle_one"/>
+        android:layout_marginTop="35dp"
+        android:text="Workout:"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="24sp"/>
 
     <ImageView
         android:id="@+id/rectangle_one"
@@ -86,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/new_workout_label"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="9dp"
         app:srcCompat="@drawable/numberbox"/>
 
     <EditText
@@ -99,57 +91,31 @@
         android:layout_marginStart="9dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Enter Goal Name"
-        android:inputType="textCapSentences"
+        android:hint="Enter Workout Name"
+        android:inputType="textCapSentences|textAutoCorrect"
         android:textColorLink="@android:color/transparent"/>
-
-    <ImageView
-        android:id="@+id/summary_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        app:srcCompat="@drawable/summarybox"
-        android:layout_below="@+id/reps_label"
-        android:layout_alignStart="@+id/rectangle_one"/>
 
     <TextView
         android:id="@+id/reps_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="Summary:"
-        android:textSize="24sp"
-        android:layout_below="@+id/workout_name_edit"
-        android:layout_alignStart="@+id/summary_box"/>
-
-    <EditText
-        android:id="@+id/summary_body"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/summary_box"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:hint="Enter Summary Here"
-        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
-        android:maxLength="1000"
-        android:textAlignment="center"
-        android:textColorLink="@android:color/transparent"
-        android:textSize="16sp"/>
-
-    <TextView
-        android:id="@+id/completion_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/rectangle"
-        android:layout_below="@+id/summary_box"
-        android:layout_marginEnd="6dp"
-        android:layout_marginTop="24dp"
+        android:layout_alignStart="@+id/rectangle_one"
+        android:layout_below="@+id/rectangle_one"
+        android:layout_marginTop="8dp"
+        android:text="Reps:"
         android:textSize="24sp"/>
 
+    <ImageView
+        android:id="@+id/rectangle_one2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weight_label"
+        android:layout_below="@+id/reps_label"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/numberbox"/>
+
     <ImageButton
-        android:id="@+id/save_button"
+        android:id="@+id/save_button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/frameLayout"
@@ -158,7 +124,7 @@
         app:srcCompat="@drawable/savebutton"/>
 
     <ImageButton
-        android:id="@+id/back_add_goal"
+        android:id="@+id/back_addwork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/workout_add_header"
@@ -166,9 +132,50 @@
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/back_icon"/>
 
+    <TextView
+        android:id="@+id/weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reps_label"
+        android:layout_below="@+id/rectangle_one2"
+        android:layout_marginTop="9dp"
+        android:text="Weight:"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/rectangle_one3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weight_label"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/numberbox"/>
+
+    <EditText
+        android:id="@+id/weight_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rep_count"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Enter Weight"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/rep_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rectangle_one2"
+        android:layout_alignStart="@+id/workout_name_edit"
+        android:layout_alignTop="@+id/rectangle_one2"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Enter Reps"
+        android:inputType="number"/>
+
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
 
 </RelativeLayout>
-

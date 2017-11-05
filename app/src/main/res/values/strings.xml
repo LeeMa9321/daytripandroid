@@ -15,6 +15,10 @@
 
     <string name="title_activity_login">LoginActivity</string>
 
+    <string name="title_activity_add_new_workout">AddNewWorkout</string>
+
+    <string name="title_activity_workout_list_page">WorkoutListPage</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -28,4 +32,7 @@
         completions."
     </string>
     <string name="title_activity_signin_page">SigninPage</string>
+
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
 </resources>

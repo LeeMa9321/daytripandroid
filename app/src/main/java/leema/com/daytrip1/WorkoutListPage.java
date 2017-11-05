@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,66 +20,63 @@ import java.util.List;
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class GoalListPage extends AppCompatActivity {
+public class WorkoutListPage extends AppCompatActivity {
 
-
-    private ListView goalListView;
-    private GoalListAdapter mAdapter;
+    private ListView workoutListView;
     private DatabaseReference mDatabaseReference;
-    private FirebaseUser user;
-    private List<GoalObject> goalList;
+    private List<Workout> workoutList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_goal_list_page);
+        setContentView(R.layout.activity_workout_list_page);
 
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("goal");
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference("workout");
 
-        goalListView = findViewById(R.id.goal_list_view);
+        workoutListView = findViewById(R.id.workout_list_view);
+        workoutList = new ArrayList<>();
 
-        goalList = new ArrayList<>();
+        ImageButton addWorkout = (ImageButton) findViewById(R.id.add_new_workout);
 
-        ImageButton addGoal = (ImageButton) findViewById(R.id.add_new_workout);
-
-        addGoal.setOnClickListener(new View.OnClickListener() {
+        addWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent addNewGoal = new Intent(GoalListPage.this, AddNewGoal.class);
-                startActivity(addNewGoal);
+                Intent addNewWorkout = new Intent(WorkoutListPage.this, AddNewWorkout.class);
+                startActivity(addNewWorkout);
             }
         });
 
-        ImageButton goback = findViewById(R.id.back_goal_list);
+        ImageButton goBack = findViewById(R.id.back_workoutlist);
 
-        goback.setOnClickListener(new View.OnClickListener() {
+        goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goback = new Intent(GoalListPage.this, FullscreenActivity.class);
-                startActivity(goback);
+                Intent intent = new Intent(WorkoutListPage.this, FullscreenActivity.class);
+                startActivity(intent);
             }
         });
 
     }
 
     @Override
-    public void onStart() {
+    protected void onStart() {
         super.onStart();
 
         mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                goalList.clear();
-                for (DataSnapshot goalSnapshot : dataSnapshot.getChildren()) {
-                    GoalObject goal = goalSnapshot.getValue(GoalObject.class);
+                workoutList.clear();
+                for (DataSnapshot workoutSnapshot : dataSnapshot.getChildren()) {
+                    Workout workout = workoutSnapshot.getValue(Workout.class);
 
-                    goalList.add(goal);
+                    workoutList.add(workout);
                 }
 
-                GoalListAdapter goalListAdapter = new GoalListAdapter(GoalListPage.this, goalList);
-                goalListView.setAdapter(goalListAdapter);
+                WorkoutListAdapter adapter = new WorkoutListAdapter(WorkoutListPage.this, workoutList);
+                workoutListView.setAdapter(adapter);
             }
 
             @Override
@@ -88,21 +84,18 @@ public class GoalListPage extends AppCompatActivity {
 
             }
         });
-
     }
 
     @Override
-    public void onStop() {
+    protected void onStop() {
         super.onStop();
-
     }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
-
+        // Trigger the initial hide() shortly after the activity has been
+        // created, to briefly hint to the user that UI controls
     }
 }
-
-

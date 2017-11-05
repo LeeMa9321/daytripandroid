@@ -102,6 +102,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
         ImageButton bmiPage = findViewById(R.id.bmibutton);
         ImageButton goalPage = findViewById(R.id.goalbutton);
+        ImageButton workoutPage =findViewById(R.id.workoutbutton);
 
         TextView header = findViewById(R.id.welcomeback);
 
@@ -120,6 +121,13 @@ public class FullscreenActivity extends AppCompatActivity {
                      Intent changeScreenGoal = new Intent(FullscreenActivity.this, GoalListPage.class);
                      startActivity(changeScreenGoal);
                  }
+        });
+        workoutPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changeScreenWorkout = new Intent(FullscreenActivity.this, WorkoutListPage.class);
+                startActivity(changeScreenWorkout);
+            }
         });
 
 
