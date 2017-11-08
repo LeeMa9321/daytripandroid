@@ -47,16 +47,6 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button
-                android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button"
-                android:textColor="@android:color/transparent"
-                android:textColorLink="@android:color/transparent"/>
-
         </LinearLayout>
 
     </FrameLayout>
@@ -76,9 +66,9 @@
         android:id="@+id/rectangle_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rectangle_one2"
         android:layout_below="@+id/new_workout_label"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="16dp"
         app:srcCompat="@drawable/numberbox"/>
 
     <EditText
@@ -101,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/rectangle_one"
         android:layout_below="@+id/rectangle_one"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="14dp"
         android:text="Reps:"
         android:textSize="24sp"/>
 
@@ -109,9 +99,8 @@
         android:id="@+id/rectangle_one2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/weight_label"
-        android:layout_below="@+id/reps_label"
-        android:layout_marginTop="8dp"
+        android:layout_alignBottom="@+id/rep_count"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/numberbox"/>
 
     <ImageButton
@@ -120,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/frameLayout"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/savebutton"/>
 
@@ -128,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/workout_add_header"
-        android:layout_alignStart="@+id/new_workout_label"
+        android:layout_alignStart="@+id/rectangle_one2"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/back_icon"/>
 
@@ -136,9 +126,9 @@
         android:id="@+id/weight_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/reps_label"
+        android:layout_alignStart="@+id/rectangle_one2"
         android:layout_below="@+id/rectangle_one2"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="8dp"
         android:text="Weight:"
         android:textColorLink="@android:color/transparent"
         android:textSize="24sp"/>
@@ -147,16 +137,17 @@
         android:id="@+id/rectangle_one3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weight_count"
         android:layout_alignStart="@+id/weight_label"
-        android:layout_centerVertical="true"
         app:srcCompat="@drawable/numberbox"/>
 
     <EditText
         android:id="@+id/weight_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/rep_count"
-        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/workout_name_edit"
+        android:layout_below="@+id/weight_label"
+        android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Enter Weight"
@@ -166,9 +157,9 @@
         android:id="@+id/rep_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/rectangle_one2"
         android:layout_alignStart="@+id/workout_name_edit"
-        android:layout_alignTop="@+id/rectangle_one2"
+        android:layout_below="@+id/reps_label"
+        android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Enter Reps"

@@ -43,7 +43,7 @@ public class GoalListPage extends AppCompatActivity {
 
         goalList = new ArrayList<>();
 
-        ImageButton addGoal = (ImageButton) findViewById(R.id.add_new_workout);
+        ImageButton addGoal = (ImageButton) findViewById(R.id.add_new_goal);
 
         addGoal.setOnClickListener(new View.OnClickListener() {
             @Override

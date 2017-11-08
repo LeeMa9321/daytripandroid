@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/ee67f2131ee8f11992aceec120a37717/AndroidManifest.xml:17:1-28:12
@@ -46,20 +46,20 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.4.2]
 MERGED from [com.google.android.gms:play-services-auth-base-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/729c3717b695ba7b11230c481a386a26/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.4.2.aar/ae14eb78e54d3c7311bbb824bcf5d1ba/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.4.2.aar/20389731a46495320e33733e5fd0e5b6/AndroidManifest.xml:2:1-6:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
 	package
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:3:11-39
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-63:12
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-67:12
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:11-69
@@ -76,7 +76,7 @@ ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/Androi
 	android:name
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:8:22-69
 application
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:10:5-61:19
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:10:5-65:19
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/AndroidManifest.xml:25:5-29:19
@@ -241,6 +241,14 @@ ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/Androi
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:59:13-51
 	android:name
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:56:13-42
+activity#leema.com.daytrip1.IdeasListPage
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:61:9-62:20
+	android:name
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:61:19-48
+activity#leema.com.daytrip1.AddNewIdea
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:63:9-64:20
+	android:name
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:63:19-45
 uses-sdk
 INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml

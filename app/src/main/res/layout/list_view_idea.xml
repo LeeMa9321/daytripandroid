@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/singleGoalContainer"
+              android:layout_width="fill_parent"
+              android:layout_height="175dp"
+              android:background="@drawable/goal_container"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:id="@+id/idea_name_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Idea Name here"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/idea_box_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:text="Insert Summary Here"/>
+
+    <Button
+        android:id="@+id/delete_idea"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Delete"/>
+
+</LinearLayout>

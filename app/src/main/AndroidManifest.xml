@@ -58,6 +58,10 @@
             android:label="@string/title_activity_add_new_workout"
             android:theme="@style/FullscreenTheme">
         </activity>
+        <activity android:name=".IdeasListPage">
+        </activity>
+        <activity android:name=".AddNewIdea">
+        </activity>
     </application>
 
 </manifest>

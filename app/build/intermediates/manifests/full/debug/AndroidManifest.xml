@@ -77,6 +77,10 @@
             android:label="@string/title_activity_add_new_workout"
             android:theme="@style/FullscreenTheme" >
         </activity>
+        <activity android:name="leema.com.daytrip1.IdeasListPage" >
+        </activity>
+        <activity android:name="leema.com.daytrip1.AddNewIdea" >
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"

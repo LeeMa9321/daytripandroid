@@ -39,7 +39,7 @@ public class WorkoutListPage extends AppCompatActivity {
         workoutListView = findViewById(R.id.workout_list_view);
         workoutList = new ArrayList<>();
 
-        ImageButton addWorkout = (ImageButton) findViewById(R.id.add_new_workout);
+        ImageButton addWorkout = (ImageButton) findViewById(R.id.add_new_idea);
 
         addWorkout.setOnClickListener(new View.OnClickListener() {
             @Override

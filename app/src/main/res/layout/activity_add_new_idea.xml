@@ -28,13 +28,13 @@
         android:background="@drawable/header"/>
 
     <TextView
-        android:id="@+id/goal_header"
+        android:id="@+id/ide_add_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/rectangle"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:text="New Goal"
+        android:text="New Idea"
         android:textSize="30sp"/>
 
     <FrameLayout
@@ -45,30 +45,18 @@
         android:layout_alignParentStart="true"
         android:id="@+id/frameLayout">
 
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="?metaButtonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@android:color/transparent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-        </LinearLayout>
-
     </FrameLayout>
 
     <TextView
         android:id="@+id/new_idea_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Goal Name:"
-        android:textColorLink="@android:color/transparent"
-        android:textSize="24sp"
+        android:layout_alignStart="@+id/rectangle_one"
         android:layout_below="@+id/rectangle"
-        android:layout_alignStart="@+id/rectangle_one"/>
+        android:layout_marginTop="35dp"
+        android:text="Idea:"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="24sp"/>
 
     <ImageView
         android:id="@+id/rectangle_one"
@@ -80,7 +68,7 @@
         app:srcCompat="@drawable/numberbox"/>
 
     <EditText
-        android:id="@+id/goal_name_edit"
+        android:id="@+id/idea_name_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/rectangle_one"
@@ -89,7 +77,7 @@
         android:layout_marginStart="9dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Enter Goal Name"
+        android:hint="Enter Idea Name"
         android:inputType="textCapSentences"
         android:textColorLink="@android:color/transparent"/>
 
@@ -97,23 +85,23 @@
         android:id="@+id/summary_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/save_button"
-        android:layout_alignStart="@+id/rectangle_one"
-        android:layout_marginBottom="13dp"
-        app:srcCompat="@drawable/summarybox"/>
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/summarybox"
+        android:layout_below="@+id/idea_summ_label"
+        android:layout_alignStart="@+id/rectangle_one"/>
 
     <TextView
-        android:id="@+id/goal_summ_label"
+        android:id="@+id/idea_summ_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/summary_body"
-        android:layout_alignStart="@+id/summary_box"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="14dp"
         android:text="Summary:"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:layout_below="@+id/idea_name_edit"
+        android:layout_alignStart="@+id/summary_box"/>
 
     <EditText
-        android:id="@+id/summary_body"
+        android:id="@+id/idea_summ_body"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/summary_box"
@@ -129,20 +117,20 @@
         android:textSize="16sp"/>
 
     <ImageButton
-        android:id="@+id/save_button"
+        android:id="@+id/idea_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/frameLayout"
+        android:layout_below="@+id/summary_box"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="47dp"
+        android:layout_marginTop="30dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/savebutton"/>
 
     <ImageButton
-        android:id="@+id/back_add_goal"
+        android:id="@+id/back_add_idea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/goal_header"
+        android:layout_alignBottom="@+id/ide_add_header"
         android:layout_alignStart="@+id/new_idea_label"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/back_icon"/>
@@ -152,4 +140,3 @@
          android:fitsSystemWindows. -->
 
 </RelativeLayout>
-
