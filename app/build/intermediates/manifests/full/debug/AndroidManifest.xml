@@ -81,6 +81,10 @@
         </activity>
         <activity android:name="leema.com.daytrip1.AddNewIdea" >
         </activity>
+        <activity android:name="leema.com.daytrip1.AddNewMeal" >
+        </activity>
+        <activity android:name="leema.com.daytrip1.MealListPage" >
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"

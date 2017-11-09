@@ -46,7 +46,7 @@ public class WorkoutListAdapter extends ArrayAdapter<Workout> {
 
         workoutName.setText(workout.getWorkoutName());
         workoutReps.setText("Number of reps: " + workout.getWorkoutReps());
-        workoutWeight.setText("Weight: " + workout.getWorkoutWeight());
+        workoutWeight.setText("Weight: " + workout.getWorkoutWeight() + " lbs");
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

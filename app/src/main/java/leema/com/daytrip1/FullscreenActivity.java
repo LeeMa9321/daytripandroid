@@ -104,6 +104,7 @@ public class FullscreenActivity extends AppCompatActivity {
         ImageButton goalPage = findViewById(R.id.goalbutton);
         ImageButton workoutPage =findViewById(R.id.workoutbutton);
         ImageButton ideaPage = findViewById(R.id.ideabutton);
+        ImageButton mealpage = findViewById(R.id.mealbutton);
 
         TextView header = findViewById(R.id.welcomeback);
 
@@ -135,6 +136,13 @@ public class FullscreenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent changeScreenIdea = new Intent(FullscreenActivity.this, IdeasListPage.class);
                 startActivity(changeScreenIdea);
+            }
+        });
+        mealpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changeScreenMeal = new Intent(FullscreenActivity.this, MealListPage.class);
+                startActivity(changeScreenMeal);
             }
         });
 

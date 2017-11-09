@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/singleGoalContainer"
+              android:layout_width="fill_parent"
+              android:layout_height="200dp"
+              android:background="@drawable/goal_container"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:id="@+id/meal_box_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meal Name here"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/meal_box_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:text="Calories here"/>
+
+    <TextView
+        android:id="@+id/meal_box_protein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protein here"/>
+
+    <TextView
+        android:id="@+id/meal_fat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fat here"/>
+
+    <TextView
+        android:id="@+id/meal_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Sugar here"/>
+
+    <Button
+        android:id="@+id/delete_button_meal"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Delete"/>
+
+</LinearLayout>
