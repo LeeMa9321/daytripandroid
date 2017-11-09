@@ -131,13 +131,13 @@
         android:layout_marginTop="18dp"/>
 
     <ImageButton
-        android:id="@+id/runbutton"
+        android:id="@+id/weatherbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/bmibutton"
         android:layout_alignTop="@+id/mealbutton"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/runbutton"/>
+        app:srcCompat="@drawable/weatherbutton"/>
 
 
     <!-- This FrameLayout insets its children based on system windows using

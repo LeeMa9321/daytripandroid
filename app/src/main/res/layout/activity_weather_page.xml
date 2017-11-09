@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leema.com.daytrip1.WeatherPage">
+
+    <TextView
+        android:id="@+id/weather_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="394dp"/>
+
+    <TextView
+        android:id="@+id/dark_sky_plug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conditions_future"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="Powered by Dark Sky"/>
+
+    <TextView
+        android:id="@+id/summary_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Fetching conditions"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/conditions_future"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summary_current"
+        android:layout_centerHorizontal="true"
+        android:text="Fetching info"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weather_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="Current Conditions:"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/header"/>
+
+    <ImageButton
+        android:id="@+id/back_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/temp_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/back_icon"/>
+
+    <TextView
+        android:id="@+id/temp_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Current Weather"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/dark_sky_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dark_sky_plug"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:text="https://darksky.net/poweredby/"/>
+</RelativeLayout>

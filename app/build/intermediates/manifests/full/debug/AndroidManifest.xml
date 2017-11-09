@@ -9,6 +9,7 @@
         android:targetSdkVersion="26" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -36,24 +37,28 @@
             android:name="leema.com.daytrip1.BmiCalculator"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_bmi_calculator"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name="leema.com.daytrip1.GoalListPage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_goal_list_page"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name="leema.com.daytrip1.AddNewGoal"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_add_new_goal"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name="leema.com.daytrip1.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity android:name="leema.com.daytrip1.SigninPage" >
@@ -69,12 +74,14 @@
             android:name="leema.com.daytrip1.WorkoutListPage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_workout_list_page"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name="leema.com.daytrip1.AddNewWorkout"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_add_new_workout"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity android:name="leema.com.daytrip1.IdeasListPage" >
@@ -84,6 +91,8 @@
         <activity android:name="leema.com.daytrip1.AddNewMeal" >
         </activity>
         <activity android:name="leema.com.daytrip1.MealListPage" >
+        </activity>
+        <activity android:name="leema.com.daytrip1.WeatherPage" >
         </activity>
 
         <meta-data

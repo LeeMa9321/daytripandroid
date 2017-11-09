@@ -105,6 +105,7 @@ public class FullscreenActivity extends AppCompatActivity {
         ImageButton workoutPage =findViewById(R.id.workoutbutton);
         ImageButton ideaPage = findViewById(R.id.ideabutton);
         ImageButton mealpage = findViewById(R.id.mealbutton);
+        ImageButton weatherPage = findViewById(R.id.weatherbutton);
 
         TextView header = findViewById(R.id.welcomeback);
 
@@ -143,6 +144,13 @@ public class FullscreenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent changeScreenMeal = new Intent(FullscreenActivity.this, MealListPage.class);
                 startActivity(changeScreenMeal);
+            }
+        });
+        weatherPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changeScreenWeather = new Intent(FullscreenActivity.this, WeatherPage.class);
+                startActivity(changeScreenWeather);
             }
         });
 

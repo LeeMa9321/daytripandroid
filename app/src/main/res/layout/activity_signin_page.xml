@@ -33,7 +33,8 @@
         android:imeOptions="actionUnspecified"
         android:maxLines="1"
         android:layout_above="@+id/login_button"
-        android:layout_alignStart="@+id/email"/>
+        android:layout_alignStart="@+id/email"
+        tools:ignore="InvalidImeActionId"/>
 
     <TextView
         android:id="@+id/email_textview"
@@ -62,40 +63,27 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="28dp"
         android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:onClick="signInExistingUser"
         android:text="Login"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="154dp"
-        android:onClick="signInExistingUser"
-        android:layout_marginBottom="39dp"
-        android:layout_above="@+id/google_login"
-        android:layout_alignEnd="@+id/password"/>
-
-    <Button
-        android:id="@+id/google_login"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="255dp"
-        android:layout_height="55dp"
-        android:background="@drawable/common_google_signin_btn_text_dark"
-        android:text="Login with Google"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="260dp"
-        android:layout_marginBottom="221dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        tools:layout_editor_absoluteY="154dp"/>
 
     <Button
         android:id="@+id/register"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login_button"
-        android:layout_marginTop="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="191dp"
         android:background="@android:color/holo_green_dark"
-        android:text="Register"
         android:onClick="registerNewUser"
-        android:layout_alignEnd="@+id/google_login"
-        android:layout_alignStart="@+id/google_login"/>
+        android:text="Register"/>
 
 </RelativeLayout>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/ee67f2131ee8f11992aceec120a37717/AndroidManifest.xml:17:1-28:12
@@ -46,37 +46,43 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.4.2]
 MERGED from [com.google.android.gms:play-services-auth-base-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/729c3717b695ba7b11230c481a386a26/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.4.2.aar/ae14eb78e54d3c7311bbb824bcf5d1ba/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.4.2.aar/20389731a46495320e33733e5fd0e5b6/AndroidManifest.xml:2:1-6:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
-INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
 	package
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:3:11-39
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:4:11-39
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:3:11-57
 	android:versionCode
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-71:12
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:6:5-70
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:8:5-70
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:6:22-68
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:8:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:7:5-70
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:9:5-70
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:7:22-68
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:9:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:8:5-71
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:10:5-71
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:8:22-69
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:10:22-69
 application
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:10:5-69:19
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:12:5-79:19
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/AndroidManifest.xml:25:5-29:19
@@ -154,109 +160,125 @@ MERGED from [com.google.firebase:firebase-analytics-impl-license:11.4.2] /Users/
 MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.4.2.aar/20389731a46495320e33733e5fd0e5b6/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/leema/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.4.2.aar/20389731a46495320e33733e5fd0e5b6/AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:17:9-40
 activity#leema.com.daytrip1.BmiCalculator
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:16:9-21:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:18:9-24:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:22:13-49
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:19:13-66
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:21:13-66
 	android:configChanges
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:18:13-74
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:20:13-74
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:20:13-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:23:13-51
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:17:13-42
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:19:13-42
 activity#leema.com.daytrip1.GoalListPage
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:22:9-27:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:25:9-31:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:29:13-49
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:25:13-66
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:28:13-66
 	android:configChanges
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:24:13-74
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:27:13-74
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:26:13-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:30:13-51
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:23:13-41
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:26:13-41
 activity#leema.com.daytrip1.AddNewGoal
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:28:9-33:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:32:9-38:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:31:13-64
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:35:13-64
 	android:configChanges
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:30:13-74
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:34:13-74
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:32:13-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:37:13-51
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:29:13-39
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:33:13-39
 activity#leema.com.daytrip1.FullscreenActivity
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:34:9-39:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:39:9-45:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:43:13-49
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:37:13-45
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:42:13-45
 	android:configChanges
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:36:13-74
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:41:13-74
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:38:13-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:44:13-51
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:35:13-47
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:40:13-47
 activity#leema.com.daytrip1.SigninPage
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:40:9-46:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:46:9-52:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:40:19-45
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:46:19-45
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:41:13-45:29
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:42:17-68
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:48:17-68
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:42:25-66
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:44:17-76
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:50:17-76
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:44:27-74
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:50:27-74
 activity#leema.com.daytrip1.RegisterActivity
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:47:9-48:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:53:9-54:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:47:19-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:53:19-51
 activity#leema.com.daytrip1.WorkoutListPage
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:49:9-54:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:55:9-61:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:59:13-49
 	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:52:13-69
-	android:configChanges
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:51:13-74
-	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:53:13-51
-	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:50:13-44
-activity#leema.com.daytrip1.AddNewWorkout
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:55:9-60:20
-	android:label
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:58:13-67
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:58:13-69
 	android:configChanges
 		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:57:13-74
 	android:theme
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:59:13-51
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:60:13-51
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:56:13-42
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:56:13-44
+activity#leema.com.daytrip1.AddNewWorkout
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:62:9-68:20
+	android:screenOrientation
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:66:13-49
+	android:label
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:65:13-67
+	android:configChanges
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:64:13-74
+	android:theme
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:67:13-51
+	android:name
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:63:13-42
 activity#leema.com.daytrip1.IdeasListPage
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:61:9-62:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:69:9-70:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:61:19-48
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:69:19-48
 activity#leema.com.daytrip1.AddNewIdea
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:63:9-64:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:71:9-72:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:63:19-45
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:71:19-45
 activity#leema.com.daytrip1.AddNewMeal
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:65:9-66:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:73:9-74:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:65:19-45
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:73:19-45
 activity#leema.com.daytrip1.MealListPage
-ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:67:9-68:20
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:75:9-76:20
 	android:name
-		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:67:19-47
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:75:19-47
+activity#leema.com.daytrip1.WeatherPage
+ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:77:9-78:20
+	android:name
+		ADDED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml:77:19-46
 uses-sdk
 INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/AndroidManifest.xml

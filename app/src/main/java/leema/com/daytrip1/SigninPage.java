@@ -9,6 +9,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ public class SigninPage extends AppCompatActivity {
     private EditText mEmailView;
     private EditText mPasswordView;
     private FirebaseAuth mAuth;
+    private ImageButton signInGoogle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,13 @@ public class SigninPage extends AppCompatActivity {
         });
 
         mAuth = FirebaseAuth.getInstance();
+        if(mAuth.getCurrentUser()!= null) {
+            Intent goToMain = new Intent(SigninPage.this, FullscreenActivity.class);
+            startActivity(goToMain);
+        }
+
+
+
 
     }
 
