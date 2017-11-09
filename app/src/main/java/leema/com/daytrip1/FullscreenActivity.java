@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseUser;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -89,6 +91,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
     private String welcomeback;
     private String mDisplayName;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -166,12 +169,12 @@ public class FullscreenActivity extends AppCompatActivity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
     private String setUpDisplayName() {
         SharedPreferences prefs = getSharedPreferences(RegisterActivity.HEADER_PREFS, MODE_PRIVATE);
         mDisplayName = prefs.getString(RegisterActivity.DISPLAY_NAME_KEY, null);
+
 
         return mDisplayName;
 

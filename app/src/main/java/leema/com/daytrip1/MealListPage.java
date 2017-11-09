@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,13 +23,15 @@ public class MealListPage extends AppCompatActivity {
     private List<Meal> mealList;
     private ListView mealListView;
     private DatabaseReference mDatabaseReference;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meal_list_page);
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("meal");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("meal");
 
         mealListView = findViewById(R.id.meal_list_view);
 

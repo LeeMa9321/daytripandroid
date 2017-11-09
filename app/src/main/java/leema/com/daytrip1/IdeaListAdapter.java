@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,6 +24,7 @@ import java.util.List;
 public class IdeaListAdapter extends ArrayAdapter<Idea> {
     private Activity mActivity;
     private List<Idea> ideaList;
+    private FirebaseUser user;
 
     public IdeaListAdapter(Activity mActivity, List<Idea> ideaList) {
         super(mActivity,R.layout.list_view_idea, ideaList);
@@ -56,7 +59,8 @@ public class IdeaListAdapter extends ArrayAdapter<Idea> {
     }
 
     private void deleteIdea(String key) {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("idea").child(key);
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(user.getUid()).child("idea").child(key);
         ref.removeValue();
     }
 }

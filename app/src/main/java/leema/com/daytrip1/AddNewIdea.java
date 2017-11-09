@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -18,6 +20,7 @@ public class AddNewIdea extends AppCompatActivity {
     private EditText ideaSummary;
     private ImageButton saveButton;
     private DatabaseReference mDatabaseReference;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,8 @@ public class AddNewIdea extends AppCompatActivity {
     }
 
     private void setDesc() {
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("idea");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("idea");
 
         final String ideaNameInput = ideaName.getText().toString();
         final String ideaSummaryInput = ideaSummary.getText().toString();

@@ -52,12 +52,10 @@
         android:id="@+id/goalbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/set_a_goal"
-        android:layout_marginStart="27dp"
+        android:layout_alignStart="@+id/what_would"
         android:layout_below="@+id/what_would"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"/>
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/small_goal"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -77,16 +75,6 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button
-                android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button"
-                android:textColor="@android:color/transparent"
-                android:textColorLink="@android:color/transparent"/>
-
         </LinearLayout>
 
     </FrameLayout>
@@ -95,40 +83,37 @@
         android:id="@+id/ideabutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/what_would"
+        android:layout_below="@+id/what_would"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/idea"
-        android:layout_marginEnd="26dp"
-        android:layout_alignTop="@+id/goalbutton"
-        android:layout_alignEnd="@+id/rectangle"/>
+        app:srcCompat="@drawable/small_idea"/>
 
     <ImageButton
         android:id="@+id/workoutbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/track_workout"
-        android:layout_marginTop="21dp"
+        android:layout_alignStart="@+id/goalbutton"
         android:layout_below="@+id/goalbutton"
-        android:layout_alignStart="@+id/goalbutton"/>
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/small_workout"/>
 
     <ImageButton
         android:id="@+id/bmibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/bmi_button"
+        android:layout_alignStart="@+id/ideabutton"
         android:layout_alignTop="@+id/workoutbutton"
-        android:layout_alignStart="@+id/ideabutton"/>
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/small_bmo"/>
 
     <ImageButton
         android:id="@+id/mealbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/track_meal"
-        android:layout_below="@+id/workoutbutton"
         android:layout_alignStart="@+id/workoutbutton"
-        android:layout_marginTop="18dp"/>
+        android:layout_below="@+id/workoutbutton"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/small_meal"/>
 
     <ImageButton
         android:id="@+id/weatherbutton"
@@ -137,7 +122,7 @@
         android:layout_alignStart="@+id/bmibutton"
         android:layout_alignTop="@+id/mealbutton"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/weatherbutton"/>
+        app:srcCompat="@drawable/small_weather"/>
 
 
     <!-- This FrameLayout insets its children based on system windows using

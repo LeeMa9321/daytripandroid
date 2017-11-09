@@ -64,7 +64,7 @@ public class AddNewGoal extends AppCompatActivity {
     public void setGoalDesc() {
         Log.d("DayTrip", "Goal Name sent!");
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("goal");
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("goal");
 
         final String goalNameInput = goalName.getText().toString();
         final String goalSummaryInput = goalSummary.getText().toString();

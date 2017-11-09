@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/rectangle_one"
         android:layout_below="@+id/rectangle"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="24dp"
         android:text="Idea:"
         android:textColorLink="@android:color/transparent"
         android:textSize="24sp"/>
@@ -124,7 +124,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/savebutton"/>
+        app:srcCompat="@drawable/save_small"/>
 
     <ImageButton
         android:id="@+id/back_add_idea"

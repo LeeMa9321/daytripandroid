@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_activity_weather_page.xml.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/layout/activity_weather_page.xml"
+    },
+    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_abc_ic_go_search_api_material.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable/abc_ic_go_search_api_material.xml"
     },
@@ -8,16 +12,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_activity_weather_page.xml.flat",
-        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/layout/activity_weather_page.xml"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
+        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/color-v23/abc_tint_switch_track.xml"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -308,12 +308,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.4.2.aar/5531c4db9b16ba3308c6ad0a218b9500/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_list_view_meal.xml.flat",
-        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/layout/list_view_meal.xml"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_list_view_meal.xml.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/layout/list_view_meal.xml"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
@@ -340,8 +340,8 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/color-v23/abc_tint_edittext.xml"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_launcher.png.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/drawable-xxhdpi-v4/ic_launcher.png"
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_workout.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_workout.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -458,6 +458,10 @@
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_calc_small.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/calc_small.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
@@ -608,6 +612,10 @@
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/set_a_goal.png"
     },
     {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_goal.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_goal.png"
+    },
+    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
@@ -688,10 +696,6 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_launcher.png.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/drawable-hdpi-v4/ic_launcher.png"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_light.png"
     },
@@ -706,6 +710,10 @@
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_idea.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_idea.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -726,6 +734,10 @@
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/d967147b628b4ec253348a4b3b256a66/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_bmo.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_bmo.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
@@ -1148,6 +1160,10 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_save_small.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/save_small.png"
+    },
+    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/d967147b628b4ec253348a4b3b256a66/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
@@ -1208,12 +1224,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_activity_add_new_meal.xml.flat",
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/layout/activity_add_new_meal.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1352,6 +1368,10 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/206265f5ff80ddd5cd2a32422def78df/res/layout/design_navigation_menu_item.xml"
     },
     {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_meal.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_meal.png"
+    },
+    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_back_icon.png.flat",
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/back_icon.png"
     },
@@ -1432,10 +1452,6 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/d967147b628b4ec253348a4b3b256a66/res/drawable-hdpi-v4/common_full_open_on_phone.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
@@ -1476,12 +1492,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1804,10 +1820,6 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_launcher.png.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/drawable-mdpi-v4/ic_launcher.png"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3ebf59a76f71acf424ea2fe22ffb0d12/res/layout/notification_template_big_media_narrow.xml"
     },
@@ -1856,12 +1868,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_launcher.png.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/drawable-xhdpi-v4/ic_launcher.png"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_small_weather.png.flat",
+        "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/small_weather.png"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1960,12 +1972,12 @@
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/layout/abc_dialog_title_material.xml"
-    },
-    {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/leema/AndroidStudioProjects/daytripandroid/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
+        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -2018,10 +2030,6 @@
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/89eafdda0d9305aff163b6c1818d7ec6/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
-        "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/menu/main.xml"
     },
     {
         "merged": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/debug/drawable_goal_container.9.png.flat",

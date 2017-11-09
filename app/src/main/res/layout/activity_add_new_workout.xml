@@ -107,11 +107,11 @@
         android:id="@+id/save_button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/frameLayout"
+        android:layout_below="@+id/rectangle_one3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="49dp"
+        android:layout_marginTop="41dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/savebutton"/>
+        app:srcCompat="@drawable/save_small"/>
 
     <ImageButton
         android:id="@+id/back_addwork"

@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,6 +24,7 @@ public class WorkoutListAdapter extends ArrayAdapter<Workout> {
 
     private Activity mActivity;
     private List<Workout> workoutList;
+    private FirebaseUser user;
 
     public WorkoutListAdapter(Activity mActivity, List<Workout> workoutList) {
         super(mActivity, R.layout.list_view_workout, workoutList);
@@ -60,7 +63,8 @@ public class WorkoutListAdapter extends ArrayAdapter<Workout> {
     }
 
     private void deleteWorkout(String key) {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("workout").child(key);
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(user.getUid()).child("workout").child(key);
         ref.removeValue();
     }
 }

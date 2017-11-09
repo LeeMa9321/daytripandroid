@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -21,6 +23,7 @@ public class AddNewMeal extends AppCompatActivity {
     private EditText sugar;
     private DatabaseReference mDatabaseReference;
     private ImageButton saveButton;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +57,8 @@ public class AddNewMeal extends AppCompatActivity {
     }
 
     private void setDesc() {
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("meal");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("meal");
 
         final String mealNameInput = mealName.getText().toString();
         final String calorieInput = calories.getText().toString();

@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,6 +24,7 @@ public class GoalListAdapter extends ArrayAdapter<GoalObject> {
 
     private Activity mActivity;
     private List<GoalObject> goalList;
+    private FirebaseUser user;
 
     public GoalListAdapter(Activity mActivity, List<GoalObject> goalList) {
         super(mActivity, R.layout.list_view_goal, goalList);
@@ -57,7 +60,8 @@ public class GoalListAdapter extends ArrayAdapter<GoalObject> {
     }
 
     private void deleteGoal(String key) {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("goal").child(key);
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(user.getUid()).child("goal").child(key);
         ref.removeValue();
 
     }

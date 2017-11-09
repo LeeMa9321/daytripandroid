@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/numberbox"
         android:layout_below="@+id/rectangle"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="19dp"
         android:text="Your Height in cm:"
         android:textSize="24sp"/>
 
@@ -134,7 +134,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        android:text="Please input above info"
         android:textSize="24sp"/>
 
     <EditText
@@ -168,19 +167,11 @@
         android:id="@+id/calcbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/enterweight"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/calcbutton"
-        android:layout_below="@+id/enterweight"
-        android:layout_centerHorizontal="true"/>
-
-    <ImageView
-        android:id="@+id/bmichart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        app:srcCompat="@drawable/bmichart"/>
+        app:srcCompat="@drawable/calc_small"/>
 
     <ImageButton
         android:id="@+id/bmi_back"

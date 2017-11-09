@@ -13,6 +13,8 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:gravity="center"
         android:keepScreenOn="true"
         android:textSize="50sp"
@@ -63,12 +65,12 @@
         android:id="@+id/new_idea_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/rectangle_one"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginTop="23dp"
         android:text="Goal Name:"
         android:textColorLink="@android:color/transparent"
-        android:textSize="24sp"
-        android:layout_below="@+id/rectangle"
-        android:layout_alignStart="@+id/rectangle_one"/>
+        android:textSize="24sp"/>
 
     <ImageView
         android:id="@+id/rectangle_one"
@@ -83,42 +85,39 @@
         android:id="@+id/goal_name_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/rectangle_one"
         android:layout_alignStart="@+id/rectangle_one"
         android:layout_alignTop="@+id/rectangle_one"
-        android:layout_marginStart="9dp"
+        android:layout_marginStart="10dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Enter Goal Name"
         android:inputType="textCapSentences"
         android:textColorLink="@android:color/transparent"/>
 
-    <ImageView
-        android:id="@+id/summary_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/save_button"
-        android:layout_alignStart="@+id/rectangle_one"
-        android:layout_marginBottom="13dp"
-        app:srcCompat="@drawable/summarybox"/>
-
     <TextView
         android:id="@+id/goal_summ_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/summary_body"
-        android:layout_alignStart="@+id/summary_box"
-        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/rectangle_one"
+        android:layout_below="@+id/rectangle_one"
+        android:layout_marginTop="13dp"
         android:text="Summary:"
         android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/goal_summ_label"
+        android:layout_below="@+id/goal_summ_label"
+        app:srcCompat="@drawable/summarybox"/>
 
     <EditText
         android:id="@+id/summary_body"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/summary_box"
+        android:layout_below="@+id/goal_summ_label"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Enter Summary Here"
@@ -136,7 +135,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="47dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/savebutton"/>
+        app:srcCompat="@drawable/save_small"/>
 
     <ImageButton
         android:id="@+id/back_add_goal"

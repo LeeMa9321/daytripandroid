@@ -3170,21 +3170,6 @@
             ]
         },
         {
-            "outputFile": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/androidTest/debug/values-w820dp-v13_values-w820dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/leema/.gradle/caches/transforms-1/files-1.1/Skycons--SNAPSHOT.aar/ec3316a55359e2383ff28c6f3e67bcef/res/values-w820dp-v13/values-w820dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/leema/AndroidStudioProjects/daytripandroid/app/build/intermediates/res/merged/androidTest/debug/values-watch-v20_values-watch-v20.arsc.flat",
             "map": [
                 {

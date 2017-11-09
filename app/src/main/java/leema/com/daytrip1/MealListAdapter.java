@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,6 +24,7 @@ public class MealListAdapter extends ArrayAdapter<Meal> {
 
     private Activity mActivity;
     private List<Meal> mealList;
+    private FirebaseUser user;
 
     public MealListAdapter(Activity mActivity, List<Meal> mealList) {
         super(mActivity, R.layout.list_view_meal, mealList);
@@ -66,7 +69,8 @@ public class MealListAdapter extends ArrayAdapter<Meal> {
     }
 
     private void deleteMeal(String key) {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("meal").child(key);
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(user.getUid()).child("meal").child(key);
         ref.removeValue();
 
     }

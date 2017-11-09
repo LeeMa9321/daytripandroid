@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,8 +37,8 @@ public class GoalListPage extends AppCompatActivity {
 
         setContentView(R.layout.activity_goal_list_page);
 
-
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("goal");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("goal");
 
         goalListView = findViewById(R.id.goal_list_view);
 

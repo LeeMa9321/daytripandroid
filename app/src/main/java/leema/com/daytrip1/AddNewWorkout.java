@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,6 +26,7 @@ public class AddNewWorkout extends AppCompatActivity {
     private EditText workoutRepsEdit;
     private ImageButton saveButton2;
     private DatabaseReference mDatabaseReference;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +64,8 @@ public class AddNewWorkout extends AppCompatActivity {
         final String workoutReps = workoutRepsEdit.getText().toString();
         final String workoutWeight = workoutWeightEdit.getText().toString();
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("workout");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("workout");
 
         if (!TextUtils.isEmpty(workoutName) && !TextUtils.isEmpty(workoutReps) && !TextUtils.isEmpty(workoutWeight)) {
             String key = mDatabaseReference.push().getKey();
