@@ -166,11 +166,9 @@ public class FullscreenActivity extends AppCompatActivity {
                     }
                 });
 
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
     }
 
+// Saving name to shared preferences
     private String setUpDisplayName() {
         SharedPreferences prefs = getSharedPreferences(RegisterActivity.HEADER_PREFS, MODE_PRIVATE);
         mDisplayName = prefs.getString(RegisterActivity.DISPLAY_NAME_KEY, null);

@@ -43,13 +43,13 @@ public class SigninPage extends AppCompatActivity {
             }
         });
 
+        //Getting status on Firebase authentication
+
         mAuth = FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser()!= null) {
             Intent goToMain = new Intent(SigninPage.this, FullscreenActivity.class);
             startActivity(goToMain);
         }
-
-
 
 
     }
@@ -63,6 +63,8 @@ public class SigninPage extends AppCompatActivity {
         finish();
         startActivity(registerPage);
     }
+
+    //try to log in, testing email and password
 
     private void attemptLogin() {
         String email = mEmailView.getText().toString();
@@ -85,6 +87,9 @@ public class SigninPage extends AppCompatActivity {
             }
         });
     }
+
+    //Alert dialog that shows if info is inputted incorrectly or no user info
+
     private void showErrorDialog(String message) {
         new AlertDialog.Builder(this)
                 .setTitle("Oops")

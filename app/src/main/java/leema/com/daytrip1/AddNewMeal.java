@@ -57,6 +57,8 @@ public class AddNewMeal extends AppCompatActivity {
     }
 
     private void setDesc() {
+
+        //Getting UserID and then pushing for individual user id
         user = FirebaseAuth.getInstance().getCurrentUser();
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(user.getUid()).child("meal");
 

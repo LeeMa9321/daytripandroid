@@ -65,7 +65,7 @@ public class WeatherPage extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
+    protected void onResume() { // onResume state of the lifecycle, get the info from the API.
         super.onResume();
 
         getWeatherForCurrentLocation();
@@ -73,6 +73,8 @@ public class WeatherPage extends AppCompatActivity {
     }
 
     private void getWeatherForCurrentLocation() {
+        //LocationManager and LocationListener to listen for the longitude and latitude to pass onto the API
+
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         mLocationListener = new LocationListener() {
@@ -105,6 +107,9 @@ public class WeatherPage extends AppCompatActivity {
 
             }
         };
+
+        //Checking to see if the user granted permission, and then letting LocationManager work if permission was granted
+
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -113,7 +118,7 @@ public class WeatherPage extends AppCompatActivity {
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
 
-            ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
+            ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE); //Passing on the request code and the permission request
 
             return;
         }
@@ -122,7 +127,7 @@ public class WeatherPage extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
+//If the request code  matches the one set, then grant the permission for user location and proceed in process to get weather, otherwise do nothing
         if(REQUEST_CODE == requestCode) {
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 getWeatherForCurrentLocation();
@@ -135,6 +140,7 @@ public class WeatherPage extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
+    //Using AsyncHttpClient to get JSON response from the DarkSky API, then calling WeatherUpdate class passing on info from JSON response to update the UI
     private void networking() {
         Log.d("DayTrip" , "IS this working?");
         AsyncHttpClient client = new AsyncHttpClient();

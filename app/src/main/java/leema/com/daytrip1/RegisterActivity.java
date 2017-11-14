@@ -47,6 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void attemptRegister() {
+        //Errors if the views are empty
         mEmailView.setError(null);
         mPasswordView.setError(null);
         mNameView.setError(null);
@@ -57,6 +58,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         boolean cancel = false;
         View focusView = null;
+
+        //seeing if everything is filled in before creating user
 
         if(TextUtils.isEmpty(password) && !isPasswordValid(password)) {
             mPasswordView.setError("Password is too short or does not match");

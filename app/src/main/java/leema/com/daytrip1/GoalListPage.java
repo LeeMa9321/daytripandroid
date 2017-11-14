@@ -42,7 +42,7 @@ public class GoalListPage extends AppCompatActivity {
 
         goalListView = findViewById(R.id.goal_list_view);
 
-        goalList = new ArrayList<>();
+        goalList = new ArrayList<>();  //Declaring a new Arraylist to add goals to Datasnapshots
 
         ImageButton addGoal = (ImageButton) findViewById(R.id.add_new_goal);
 
@@ -69,6 +69,8 @@ public class GoalListPage extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
+
+        //Listening to value events, clear the previous list items an then adding a new object to the ArrayList based on the return of the DataSnapshot, then calling Adapter for the listView.
 
         mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override

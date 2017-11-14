@@ -70,8 +70,8 @@ public class AddNewGoal extends AppCompatActivity {
         final String goalSummaryInput = goalSummary.getText().toString();
 
         if(!TextUtils.isEmpty(goalNameInput) && !TextUtils.isEmpty(goalSummaryInput)) {
-            String key = mDatabaseReference.push().getKey();
-            GoalObject goal = new GoalObject(key, goalNameInput, goalSummaryInput);
+            String key = mDatabaseReference.push().getKey(); //getting key value
+            GoalObject goal = new GoalObject(key, goalNameInput, goalSummaryInput); //creating new object to push to Firebase, based on the GoalObject class
 
             mDatabaseReference.child(key).setValue(goal);
             goalName.setText("");

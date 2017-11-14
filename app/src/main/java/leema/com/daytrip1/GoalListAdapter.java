@@ -26,6 +26,8 @@ public class GoalListAdapter extends ArrayAdapter<GoalObject> {
     private List<GoalObject> goalList;
     private FirebaseUser user;
 
+    //Constructor, setting context, XML layout, and the list
+
     public GoalListAdapter(Activity mActivity, List<GoalObject> goalList) {
         super(mActivity, R.layout.list_view_goal, goalList);
         this.mActivity = mActivity;
@@ -35,6 +37,9 @@ public class GoalListAdapter extends ArrayAdapter<GoalObject> {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+        //Declaring an inflater and using it to fill the layout of the single element
+
         LayoutInflater inflater = mActivity.getLayoutInflater();
 
         View listViewItem = inflater.inflate(R.layout.list_view_goal, null, true);
@@ -43,7 +48,7 @@ public class GoalListAdapter extends ArrayAdapter<GoalObject> {
         TextView goalSummary = listViewItem.findViewById(R.id.goal_box_summary);
         Button deleteButton = listViewItem.findViewById(R.id.delete_button);
 
-        final GoalObject goal = goalList.get(position);
+        final GoalObject goal = goalList.get(position); //Going to the list and grabbing the corresponding object based on position
 
         goalName.setText(goal.getGoalName());
         goalSummary.setText(goal.getGoalDescription());

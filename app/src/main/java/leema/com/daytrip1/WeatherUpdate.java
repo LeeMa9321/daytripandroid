@@ -12,6 +12,8 @@ public class WeatherUpdate {
     private String currentSummary;
     private String precipProb;
 
+    //Parsing JSON data from API to get values for the data members, getter methods to set what to return for the values
+
     public static WeatherUpdate fromJSON(JSONObject jsonObject) {
         WeatherUpdate weatherUpdate = new WeatherUpdate();
         try {
