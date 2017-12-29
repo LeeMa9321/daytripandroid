@@ -28,7 +28,7 @@ public class WeatherPage extends AppCompatActivity {
 
     final String WEATHER_URL = "https://api.darksky.net/forecast/";
 
-    final private String API_KEY = "0f86ecb681eebd0c25e08cee34a88d40/";
+    final private String API_KEY = "REDACTED";
 
     final long UPDATE_TIME = 5000;
 
